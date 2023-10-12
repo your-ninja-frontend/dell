@@ -1,0 +1,12 @@
+.container {
+  min-width: $mobail;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: $desktop) {
+  .container {
+    max-width: $desktop;
+    padding: 0 260px;
+  }
+}

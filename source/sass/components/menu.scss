@@ -1,0 +1,40 @@
+.menu {
+  display: none;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding: 56px 38px 64px;
+  background-color: $white;
+}
+
+.menu__link {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1919px) {
+  .menu--open {
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    z-index: 10;
+    background-color: $bg-opacity;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .menu {
+    display: block;
+    margin-right: 50px;
+  }
+
+  .menu__list {
+    padding: 0;
+    flex-direction: row;
+  }
+}

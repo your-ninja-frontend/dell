@@ -1,0 +1,114 @@
+.card-advantages {
+  position: relative;
+  width: 345px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: $text-color;
+
+  &::before {
+    content: '';
+    width: 123px;
+    height: 66px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('../img/advantages-line.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.card-advantages__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  background-color: $bg-lighten-dark;
+  border-radius: 9px;
+}
+
+.card-advantages__title,
+.card-advantages__description {
+  font-family: $euclid-font;
+}
+
+.card-advantages__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: $white;
+  margin-bottom: 10px;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  &--oficial-mobail {
+    margin-bottom: 15px;
+  }
+
+  &--oficial-desktop {
+    display: none;
+  }
+}
+
+.card-advantages__description {
+  font-size: 16px;
+  font-weight: 300;
+  color: $text-color-alt-1;
+
+  &--oficial {
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.card-advantages__description-br-desktop {
+  display: none;
+}
+
+@media screen and (min-width: $desktop) {
+  .card-advantages {
+    width: 330px;
+    padding: 30px 22px 35px 30px;
+    border-radius: 18px;
+
+    &::before {
+      width: 139.5px;
+      height: 92px;
+      top: 1px;
+      right: 1px;
+      background-image: url('../img/advantages-line-desktop.svg');
+    }
+  }
+
+  .card-advantages__icon-wrapper {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 25px;
+  }
+
+  .card-advantages__icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .card-advantages__title {
+    font-size: 22px;
+    margin-bottom: 13px;
+  }
+
+  .card-advantages__title-mobail,
+  .card-advantages__description-br-mobail,
+  .card-advantages__title-br-mobail,
+  .card-advantages__title--oficial-mobail,
+  .card-advantages__description-mobail {
+    display: none;
+  }
+  .card-advantages__description-br-desktop,
+  .card-advantages__title--oficial-desktop {
+    display: block;
+  }
+}

@@ -1,0 +1,64 @@
+.form-callback__input-wrapper {
+  position: relative;
+  margin-bottom: 40px;
+
+  &:last-of-type {
+    margin-bottom: 29px;
+  }
+}
+
+.form-callback__title-input {
+  position: absolute;
+  top: -11px;
+  left: 16px;
+  width: max-content;
+  padding: 0 11px;
+  background-color: $text-color;
+  color: $bg-gray;
+  font-weight: 300;
+  line-height: 20px;
+
+  &--name {
+    padding: 0 7px;
+  }
+}
+
+.form-callback__input {
+  max-width: 315px;
+  color: $white;
+}
+
+.form-callback__input--textarea {
+  display: block;
+  height: 80px;
+  padding: 10px;
+}
+
+.form-callback__error {
+  display: block;
+  max-width: 315px;
+  color: red;
+}
+
+@media screen and (min-width: $desktop) {
+  .form-callback__input-wrapper {
+    margin-bottom: 52.75px;
+
+    &:last-of-type {
+      margin-bottom: 57px;
+    }
+  }
+
+  .form-callback__title-input {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .form-callback__input--textarea {
+    height: 145px;
+  }
+
+  .form-callback__input {
+    max-width: 434px;
+  }
+}

@@ -1,0 +1,39 @@
+// GLOBAL
+@import 'global/fonts.scss';
+@import 'global/variables.scss';
+@import 'global/global.scss';
+
+// UI
+@import 'ui/button-menu.scss';
+@import 'ui/button.scss';
+@import 'ui/input.scss';
+
+// UTILS
+@import 'utils/container.scss';
+@import 'utils/visually-hidden.scss';
+@import 'utils/swiper.scss';
+@import 'utils/overflow-hidden.scss';
+
+// LAYOUT
+@import 'layout/header.scss';
+@import 'layout/footer.scss';
+
+// COMPONENTS
+@import 'components/nav.scss';
+@import 'components/menu.scss';
+@import 'components/user-menu.scss';
+@import 'components/account-menu.scss';
+@import 'components/main-slider.scss';
+@import 'components/catalog.scss';
+@import 'components/card-catalog.scss';
+@import 'components/advantages.scss';
+@import 'components/card-advantages.scss';
+@import 'components/news.scss';
+@import 'components/card-news.scss';
+@import 'components/contacts.scss';
+@import 'components/our-contacts.scss';
+@import 'components/social.scss';
+@import 'components/callback.scss';
+@import 'components/form-callback.scss';
+@import 'components/footer-nav.scss';
+@import 'components/footer-contacts.scss';

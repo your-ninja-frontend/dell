@@ -1,0 +1,52 @@
+.account-menu {
+  width: 405px;
+  color: $black;
+  background-color: $white;
+  border-radius: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  filter: drop-shadow(
+      0px 1.7530173063278198px 9.39116382598877px $card-news-date-shadow
+    )
+    drop-shadow(0px 14px 75px $menu-shadow);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 192.5px;
+    width: 16px;
+    height: 16px;
+    background-color: $white;
+    transform: rotate(45deg);
+  }
+}
+
+.account-menu__user-name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30.5px 30px 30px;
+}
+
+.account-menu__user-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  background-color: $button-menu-bg;
+}
+
+.account-menu__item {
+  border-top: 1px solid $bg-gray;
+}
+
+.account-menu__link {
+  display: block;
+  padding: 19px 30px 20px;
+  font-size: 20px;
+  line-height: 30px;
+  color: $black;
+}

@@ -1,0 +1,25 @@
+.button-menu {
+  width: 46px;
+  height: 46px;
+  margin-left: 15px;
+  border-radius: 50%;
+  background-color: $button-menu-bg;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--open {
+    background-image: url('../img/icon-burger.svg');
+    background-position: center 13px;
+  }
+
+  &--close {
+    background-image: url('../img/icon-close.svg');
+    background-position: 15px 15px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .button-menu {
+    display: none;
+  }
+}

@@ -1,0 +1,32 @@
+.social {
+  display: flex;
+}
+
+.social__link {
+  display: block;
+  width: 27px;
+  height: 27px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--footer {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.social__link--facebook {
+  background-image: url('../img/icon-facebook.svg');
+}
+
+.social__link--whatsapp {
+  background-image: url('../img/icon-whatsapp.svg');
+}
+
+@media screen and (min-width: $desktop) {
+  .social__link {
+    width: 39px;
+    height: 39px;
+    background-size: 39px;
+  }
+}

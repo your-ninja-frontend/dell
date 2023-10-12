@@ -1,0 +1,39 @@
+.footer-contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-contacts__title {
+  line-height: 20px;
+  color: $text-color-alt;
+}
+
+.footer-contacts__description {
+  line-height: 23px;
+}
+
+@media screen and (min-width: $desktop) {
+  .footer-contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-contacts__list {
+    flex-direction: row;
+    gap: 153px;
+    margin-bottom: 0;
+  }
+
+  .footer-contacts__title {
+    margin-bottom: 11px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .footer-contacts__description {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}

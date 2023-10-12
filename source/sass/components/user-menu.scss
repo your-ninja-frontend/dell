@@ -1,0 +1,86 @@
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-menu__account-menu {
+  display: none;
+  position: absolute;
+  top: 123px;
+  left: -95px;
+  z-index: 2;
+}
+
+.user-menu__item {
+  position: relative;
+
+  &--stats,
+  &--heart {
+    display: none;
+  }
+}
+
+.user-menu__user-name {
+  display: none;
+}
+
+.user-menu__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: $button-menu-bg;
+}
+
+.user-menu__notice {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  padding: 1px 4px 1px 5px;
+  color: $white;
+  background-color: $blue-alt;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: $desktop) {
+  .user-menu {
+    gap: 30px;
+    margin-left: auto;
+  }
+
+  .user-menu__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .user-menu__item--account {
+    min-height: 123px;
+  }
+
+  .user-menu__user-name {
+    display: none;
+    min-width: 63px;
+    font-size: 20px;
+    line-height: 30px;
+    color: $black;
+  }
+
+  .user-menu__button {
+    width: 49px;
+    height: 49px;
+  }
+
+  .user-menu__item--account:hover .user-menu__account-menu,
+  .user-menu__item--account:hover .user-menu__user-name {
+    display: block;
+  }
+}

@@ -1,0 +1,145 @@
+.our-contacts {
+  padding: 101px 30px 60px;
+  background-color: $bg-light-gray;
+}
+
+.our-contacts__title {
+  margin-bottom: 15px;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.our-contacts__description {
+  max-width: 268px;
+  margin-bottom: 40px;
+  color: $text-color-alt;
+  line-height: 23px;
+}
+
+.our-contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.our-contacts__item {
+  display: flex;
+  gap: 8px;
+
+  &::before {
+    content: '';
+    display: block;
+    min-width: 19px;
+    background-repeat: no-repeat;
+  }
+
+  &--place {
+    &::before {
+      background-image: url('../img/icon-place.svg');
+    }
+  }
+
+  &--email {
+    &::before {
+      background-image: url('../img/icon-email.svg');
+    }
+  }
+
+  &--tel {
+    &::before {
+      background-image: url('../img/icon-tel.svg');
+    }
+  }
+}
+
+.our-contacts__item-title {
+  color: $text-color-alt;
+  line-height: 20px;
+}
+
+.our-contacts__item-description {
+  display: block;
+  max-width: 255px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.our-contacts__social {
+  gap: 12px;
+}
+
+@media screen and (min-width: $desktop) {
+  .our-contacts {
+    padding: 100px;
+  }
+
+  .our-contacts__title {
+    margin-bottom: 18px;
+    font-size: 50px;
+  }
+
+  .our-contacts__description {
+    max-width: none;
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .our-contacts__list {
+    gap: 47px;
+    margin-bottom: 60px;
+    padding-left: 1px;
+  }
+
+  .our-contacts__item {
+    gap: 17px;
+
+    &:nth-child(2) {
+      margin-bottom: 25px;
+    }
+
+    &::before {
+      min-width: 38px;
+    }
+
+    &--place {
+      &::before {
+        background-image: url('../img/icon-place-desktop.svg');
+      }
+    }
+
+    &--email {
+      &::before {
+        background-image: url('../img/icon-email-desktop.svg');
+      }
+    }
+
+    &--tel {
+      &::before {
+        background-image: url('../img/icon-tel-desktop.svg');
+      }
+    }
+  }
+
+  .our-contacts__item-title {
+    margin: 5px 0 8px;
+    font-size: 18px;
+    line-height: 24px;
+
+    &--email {
+      margin-top: 3px;
+    }
+  }
+
+  .our-contacts__item-description {
+    max-width: 358px;
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .our-contacts__social {
+    gap: 16px;
+    padding-left: 3px;
+  }
+}
